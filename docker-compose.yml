@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pythonspark:
+    build: .
+    restart: always
+    volumes:
+      - .:/opt/notebooks      
+    ports:
+      - "8888:8888"
